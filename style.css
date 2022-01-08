@@ -1,0 +1,197 @@
+body>*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'The Nautigal', cursive;
+    letter-spacing: .5em;
+    font-weight: bold;
+}
+input[type="file"]{
+    font-family: sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-2em);
+}
+body{
+    background: rgb(6,0,116);
+    background: linear-gradient(90deg, rgba(6,0,116,0.6976540616246498) 0%, rgba(176,24,195,1) 19%, rgba(224,135,187,1) 67%, rgba(118,53,133,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+body h1{
+    text-align: center;
+}
+button, input[type="file"]{
+    cursor: pointer;
+}
+button{
+    background-color: rgba(175, 24, 195, 0.445);
+    border: 2px solid rgb(94, 38, 107);
+    border-radius: 5px;
+    font-size: 150%;
+}
+button:hover{
+    background-color: rgba(175, 24, 195, 0.9);
+}
+
+/* Classes */
+.canvas{
+    display: block;
+    margin: 1em auto auto auto;
+}
+.canvas-header{
+    text-align: center;
+}
+.creator-container{
+    border-radius: 5px;
+    padding: 60px auto auto auto;
+    height: 560px;
+    width: 560px;
+    margin: auto;
+    position: relative;
+}
+
+.creator-title{
+    text-align: center;
+}
+.wlcChungus{
+    border-radius: 5px;
+    width: 1080px;
+    height: 1080px;
+    background-image: url('./assets/P4nNi3w0ln1k4301.png');
+    background-size: contain;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    position: absolute;
+    left: -10000px;
+    top: 0;
+}
+.wlcScheme{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/P4nNi3w0ln1k4301.png');
+    background-size: contain;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    position: relative;
+}
+.wlcScheme img{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    z-index: 10;
+}
+.wlcScheme .scheme-box{
+    border: 1px solid black;
+    position: relative;
+}
+.wlcScheme .scheme-box .new-image-container,.wlcChungus .scheme-box .new-image-container {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    position: relative;
+}
+
+.wlcScheme .scheme-box .new-image-container img{
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+}
+.wlcChungus .scheme-box .new-image-container img{
+    width: 100%;
+    height: 98.4%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,1%);
+    z-index: 5;
+}
+.wlcScheme .scheme-box button{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.wlcScheme .scheme-box:last-child{
+    grid-column: 1 / 3;
+}
+.wlcChungus .scheme-box:last-child{
+    grid-column: 1 / 3;
+}
+
+.wlcChungus .vs-img{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    z-index: 10;
+}
+.generate{
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: 2em;
+    cursor: default;
+}
+.generate button{
+    cursor: pointer;
+}
+.preview-container{
+    /* display: flex; */
+    flex-direction: column;
+    border: 1px dotted black;
+    margin: .5em auto auto auto;
+    border-radius: 5px;
+    background-color: rgba(81, 161, 27, 0.411);
+}
+.wlcChungus .wlc-watermark{
+    position: absolute;
+    left: 73%;
+    top: 57%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+
+
+/* Media query */
+
+/* Smartphone resolution */
+@media only screen and (max-width: 480px){
+    .creator-container{
+        padding: 0px;
+        width: 230px;
+        height: 230px;
+        border: none;
+    }
+
+}
+
+/* Tablet resolution */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .creator-container{
+        padding: 20px;
+        width: 400px;
+        height: 400px;
+    }
+}
+@media only screen and (min-width: 1172px){
+    .main-content{
+        display: flex;
+        flex-direction: row;
+    }
+    .preview-container{
+        padding: 60px auto auto auto;
+    }
+    
+}

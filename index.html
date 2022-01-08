@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Favicon ico error fix -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
+    <script src="./scripts/canvas.js"></script>
+    <script src="./scripts/html2canvas.min.js"></script>
+    <script async src = "./scripts/wiseLowCreator.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WLM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="file" accept="image/*" class="file-import" name="file-import">
+    <input type="file" accept="image/*" class="file-import" name="file-import">
+    <input type="file" accept="image/*" class="file-import" name="file-import">
+   
+    <div class="creator-title">
+        <h1>Czarnuch</h1>
+        <div class="generate">
+            <button id="download">download image</button>
+            <button id="updatePreview">update preview</button>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="creator-container">
+            <div class="wlcScheme" >
+                <img class="vs-img" src="./assets/vs.png" alt="VS">
+                
+                <div class="scheme-box">
+                    <button>Import</button>
+                    <div class="new-image-container">
+                        <img src="./assets/default1.jpg" alt="">
+                    </div>
+                </div>
+                
+                <div class="scheme-box">
+                    <button>Import</button>
+                    <div class="new-image-container">
+                        <img src="./assets/default2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="scheme-box">
+                    <button>Import</button>
+                    <div class="new-image-container" style="width: 50%">
+                        <img src="./assets/default3.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="preview-container">
+            <div class="creator-title">
+                <h1>Preview</h1>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- <input type='file' onchange="readURL(this);" />
+<img id="blah" src="http://placehold.it/180" alt="your image" /> -->
+</body>
+</html>
